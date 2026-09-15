@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   Target,
@@ -11,17 +12,17 @@ import aboutus from "../assets/aboutus.webp";
 
 const Aboutus = () => {
   return (
-    <main className="w-full bg-white text-gray-900 font-['Inter']">
+    <main className="w-full bg-white text-gray-900 font-sans">
 
       {/* ================= HERO ================= */}
       <section className="relative h-[300px] w-full overflow-hidden sm:h-[350px] lg:h-[390px]">
 
         {/* Background Image */}
         <img
-  src={aboutus}
-  alt="About Us"
-  className="absolute inset-0 w-full h-full object-cover object-center"
-/>
+          src={aboutus}
+          alt="About Us"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#071b2b]/75" />
@@ -198,10 +199,14 @@ const Aboutus = () => {
               </div>
 
               <p className="text-[15px] leading-8 text-gray-600 sm:text-base">
-                Our values are rooted in integrity, excellence, safety, innovation, and teamwork. We are committed to delivering sustainable infrastructure solutions through responsible engineering practices and reliable execution. Driven by quality and accountability, we strive to create long-term value for our clients, communities, and the nation through every project we undertake.
+                Our values are rooted in integrity, excellence, safety,
+                innovation, and teamwork. We are committed to delivering
+                sustainable infrastructure solutions through responsible
+                engineering practices and reliable execution. Driven by quality
+                and accountability, we strive to create long-term value for our
+                clients, communities, and the nation through every project we
+                undertake.
               </p>
-
-
 
             </div>
 
@@ -228,9 +233,13 @@ const Aboutus = () => {
               </div>
 
               <p className="text-[15px] leading-8 text-gray-600 sm:text-base">
-                Our culture is built on collaboration, respect, continuous learning, and a shared commitment to excellence. We foster an environment where innovation, teamwork, and professional growth empower our people to perform at their best. By valuing every contribution and encouraging strong relationships across teams and sites, we create a workplace driven by purpose, integrity, and mutual success.
-
-
+                Our culture is built on collaboration, respect, continuous
+                learning, and a shared commitment to excellence. We foster an
+                environment where innovation, teamwork, and professional growth
+                empower our people to perform at their best. By valuing every
+                contribution and encouraging strong relationships across teams
+                and sites, we create a workplace driven by purpose, integrity,
+                and mutual success.
               </p>
 
             </div>
@@ -282,3 +291,4 @@ const ValueItem = ({ icon, title }) => {
 };
 
 export default Aboutus;
+

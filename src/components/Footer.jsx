@@ -1,3 +1,4 @@
+
 import { MapPin, Mail, Phone } from "lucide-react";
 
 import {
@@ -9,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white text-gray-900 font-['Inter']">
+    <footer className="w-full bg-white font-sans text-gray-900">
 
       {/* ================= TOP SECTION ================= */}
       <div className="bg-[#f3f3f3]">

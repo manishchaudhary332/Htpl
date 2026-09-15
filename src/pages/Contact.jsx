@@ -11,7 +11,7 @@ import contactHero from "../assets/contact.webp";
 
 const Contact = () => {
   return (
-    <main className="w-full bg-[#f8fafc] text-[#071b2b]">
+    <main className="w-full bg-[#f8fafc] font-sans text-[#071b2b]">
 
       {/* =====================================================
           HERO
@@ -42,7 +42,7 @@ const Contact = () => {
               <span className="h-px w-8 bg-[#75b843] sm:w-12" />
             </div>
 
-            <h1 className="font-serif text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
               Work with Us
             </h1>
 
@@ -68,7 +68,7 @@ const Contact = () => {
             Start a Conversation
           </span>
 
-          <h2 className="mt-3 font-serif text-2xl font-bold uppercase text-[#071b2b] sm:text-3xl lg:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold uppercase text-[#071b2b] sm:text-3xl lg:text-4xl">
             Have an Upcoming Project? Let's Build It Together.
           </h2>
 
@@ -89,7 +89,7 @@ const Contact = () => {
               <Send size={25} />
             </div>
 
-            <h3 className="font-serif text-2xl font-bold text-[#071b2b] sm:text-3xl">
+            <h3 className="text-2xl font-bold text-[#071b2b] sm:text-3xl">
               Let's Bring Your Ideas to Life
             </h3>
 
@@ -190,7 +190,7 @@ const Contact = () => {
                   Contact Form
                 </span>
 
-                <h3 className="mt-2 font-serif text-2xl font-bold text-[#071b2b]">
+                <h3 className="mt-2 text-2xl font-bold text-[#071b2b]">
                   Tell Us About Your Project
                 </h3>
 
@@ -312,7 +312,7 @@ const Contact = () => {
               Find Us
             </span>
 
-            <h2 className="mt-2 font-serif text-3xl font-bold text-[#071b2b]">
+            <h2 className="mt-2 text-3xl font-bold text-[#071b2b]">
               Our Location
             </h2>
 
@@ -370,7 +370,7 @@ const Contact = () => {
             Let's Build Together
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
             Your Vision. Our Expertise.
           </h2>
 

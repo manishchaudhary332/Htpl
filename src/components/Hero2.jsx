@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import {
   ChevronLeft,
@@ -56,7 +57,12 @@ const Hero2 = () => {
   useEffect(() => {
     const updateSlider = () => {
       const width = viewportRef.current?.clientWidth || 0;
-      const count = window.innerWidth >= 1024 ? 7 : window.innerWidth >= 768 ? 4 : 2;
+      const count =
+        window.innerWidth >= 1024
+          ? 7
+          : window.innerWidth >= 768
+          ? 4
+          : 2;
 
       setVisibleCount(count);
       setItemWidth(width / count);
@@ -65,7 +71,10 @@ const Hero2 = () => {
     updateSlider();
 
     const resizeObserver = new ResizeObserver(updateSlider);
-    if (viewportRef.current) resizeObserver.observe(viewportRef.current);
+
+    if (viewportRef.current) {
+      resizeObserver.observe(viewportRef.current);
+    }
 
     window.addEventListener("resize", updateSlider);
 
@@ -93,6 +102,7 @@ const Hero2 = () => {
           setCurrentIndex(logos.length - 1);
         });
       });
+
       return;
     }
 
@@ -132,7 +142,8 @@ const Hero2 = () => {
   }, [currentIndex]);
 
   return (
-    <section className="w-full overflow-hidden bg-white">
+    <section className="w-full overflow-hidden bg-white font-sans">
+
       {/* CLIENT / ORGANIZATION LOGOS */}
       <div
         className="relative bg-white py-7 sm:py-8 lg:py-9"
@@ -141,13 +152,15 @@ const Hero2 = () => {
       >
         <div className="mx-auto mb-6 flex max-w-[1800px] items-center gap-4 px-5 sm:px-8 lg:px-12">
           <span className="h-[5px] w-10 shrink-0 rounded-full bg-slate-900 sm:w-12" />
-          <h2 className="font-serif text-lg font-bold leading-tight tracking-tight text-slate-900 sm:text-xl lg:text-2xl">
+
+          <h2 className="text-lg font-bold leading-tight tracking-tight text-slate-900 sm:text-xl lg:text-2xl">
             Proudly serving reputed organizations with reliable, sustainable,
             and high-quality engineering solutions.
           </h2>
         </div>
 
         <div className="relative mx-auto max-w-[1800px] px-10 sm:px-14 lg:px-16">
+
           {/* LEFT ARROW */}
           <button
             onClick={prevSlide}
@@ -161,10 +174,14 @@ const Hero2 = () => {
           <div ref={viewportRef} className="overflow-hidden">
             <div
               className={`flex w-max ${
-                animate ? "transition-transform duration-700 ease-in-out" : ""
+                animate
+                  ? "transition-transform duration-700 ease-in-out"
+                  : ""
               }`}
               style={{
-                transform: `translate3d(-${currentIndex * itemWidth}px, 0, 0)`,
+                transform: `translate3d(-${
+                  currentIndex * itemWidth
+                }px, 0, 0)`,
               }}
             >
               {sliderLogos.map((logo, index) => (
@@ -201,9 +218,11 @@ const Hero2 = () => {
         <div className="pointer-events-none absolute -left-32 -top-32 h-72 w-72 rounded-full bg-emerald-400/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-12 lg:px-10 lg:py-14">
+
           <div className="mb-8 flex items-center gap-4 sm:mb-11">
             <span className="h-[4px] w-12 rounded-full bg-white sm:w-20" />
-            <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+
+            <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               Key Highlights
             </h2>
           </div>
@@ -221,11 +240,11 @@ const Hero2 = () => {
                     <Icon size={28} strokeWidth={1.8} />
                   </div>
 
-                  <div className="font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                  <div className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
                     {item.number}
                   </div>
 
-                  <p className="mt-2 font-serif text-sm font-semibold text-white/90 sm:text-lg">
+                  <p className="mt-2 text-sm font-semibold text-white/90 sm:text-lg">
                     {item.title}
                   </p>
 
@@ -239,13 +258,15 @@ const Hero2 = () => {
         {/* GET IN TOUCH */}
         <div className="border-t border-white/10 bg-white/[0.08]">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
-            <h3 className="font-serif text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
+
+            <h3 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
               Get in Touch With us
             </h3>
 
             <button className="hidden rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#0b3029] sm:block">
               Contact Us
             </button>
+
           </div>
         </div>
       </div>
@@ -254,3 +275,4 @@ const Hero2 = () => {
 };
 
 export default Hero2;
+

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { MapPin, ArrowUpRight } from "lucide-react";
 
@@ -70,7 +71,7 @@ const projects = [
 
 const OngoingProjects = () => {
   return (
-    <main className="w-full bg-white text-[#071b2b]">
+    <main className="w-full bg-white font-sans text-[#071b2b]">
 
       {/* ================= HERO ================= */}
       <section className="relative h-[250px] overflow-hidden sm:h-[300px] lg:h-[330px]">
@@ -98,7 +99,7 @@ const OngoingProjects = () => {
               <span className="h-px w-8 bg-[#75b843] sm:w-12" />
             </div>
 
-            <h1 className="font-serif text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
               Ongoing Projects...
             </h1>
 
@@ -210,7 +211,7 @@ const OngoingProjects = () => {
             Building The Future
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
             Infrastructure That Makes A Difference
           </h2>
 
@@ -228,3 +229,4 @@ const OngoingProjects = () => {
 };
 
 export default OngoingProjects;
+

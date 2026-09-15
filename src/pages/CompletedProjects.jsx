@@ -1,3 +1,4 @@
+
 import React from "react";
 import { MapPin, ArrowUpRight } from "lucide-react";
 
@@ -11,7 +12,6 @@ import project3 from "../assets/camp3.png";
 import project4 from "../assets/Hero2.jpeg";
 import project5 from "../assets/Hero3.webp";
 import project6 from "../assets/Hero4.webp";
-
 
 const projects = [
   {
@@ -42,7 +42,7 @@ const projects = [
 
 const CompletedProjects = () => {
   return (
-    <main className="w-full bg-white text-[#071b2b]">
+    <main className="w-full bg-white font-sans text-[#071b2b]">
 
       {/* ================= HERO ================= */}
       <section className="relative h-[250px] overflow-hidden sm:h-[290px] lg:h-[330px]">
@@ -71,7 +71,7 @@ const CompletedProjects = () => {
               <span className="h-px w-8 bg-[#75b843] sm:w-12" />
             </div>
 
-            <h1 className="font-serif text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
               Completed Projects
             </h1>
 
@@ -188,7 +188,7 @@ const CompletedProjects = () => {
             Our Track Record
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
             Built With Quality. Delivered With Trust.
           </h2>
 
@@ -206,3 +206,4 @@ const CompletedProjects = () => {
 };
 
 export default CompletedProjects;
+

@@ -1,27 +1,27 @@
+
 import React from "react";
 import {
   Users,
 } from "lucide-react";
 
-
-import jatin from "../assets/jatin.png"
-import Aditya from "../assets/Aditya.png"
-import cta from "../assets/cta.webp"
+import jatin from "../assets/jatin.png";
+import Aditya from "../assets/Aditya.png";
+import cta from "../assets/cta.webp";
 
 const Leadership = () => {
   return (
-    <main className="min-h-screen bg-white font-['Inter'] text-gray-900">
+    <main className="min-h-screen bg-white font-sans text-gray-900">
 
-         {/* HERO SECTION*/}
-     
+      {/* HERO SECTION */}
+
       <section className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[330px] lg:h-[360px]">
 
         {/* Hero Background */}
         <img
-  src={cta}
-  alt="Background"
-  className="absolute inset-0 w-full h-full object-cover object-center"
-/>
+          src={cta}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#071b2b]/10" />
@@ -92,7 +92,6 @@ const Leadership = () => {
               {/* Image Container */}
               <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.10)]">
 
-                {/* Replace src with your image */}
                 <img
                   src={jatin}
                   alt="Mr. Jatin Kumar"
@@ -202,79 +201,79 @@ const Leadership = () => {
           ===================================================== */}
           <div className="grid items-center gap-10 lg:grid-cols-[1fr_360px] lg:gap-16">
 
-  {/* Image */}
-  <div className="relative mx-auto w-full max-w-[330px] lg:order-2">
+            {/* Image */}
+            <div className="relative mx-auto w-full max-w-[330px] lg:order-2">
 
-    {/* Decorative Shape */}
-    <div className="absolute -right-5 top-10 h-40 w-24 rounded-2xl bg-[#3479ad]/10 sm:-right-7" />
+              {/* Decorative Shape */}
+              <div className="absolute -right-5 top-10 h-40 w-24 rounded-2xl bg-[#3479ad]/10 sm:-right-7" />
 
-    {/* Image Container */}
-    <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.10)]">
+              {/* Image Container */}
+              <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.10)]">
 
-      <img
-        src={Aditya}
-        alt="Mr. Aditya Chaudhary"
-        className="h-[400px] w-full object-cover object-top transition-transform duration-500 hover:scale-[1.03] sm:h-[430px]"
-      />
+                <img
+                  src={Aditya}
+                  alt="Mr. Aditya Chaudhary"
+                  className="h-[400px] w-full object-cover object-top transition-transform duration-500 hover:scale-[1.03] sm:h-[430px]"
+                />
 
-    </div>
+              </div>
 
-  </div>
-
-
-  {/* Content */}
-  <div className="lg:order-1">
-
-    {/* Label */}
-    <div className="mb-4 flex items-center gap-3">
-
-      <span className="h-[3px] w-10 rounded-full bg-[#3479ad]" />
-
-      <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#3479ad]">
-        Board Of Directors
-      </span>
-
-    </div>
+            </div>
 
 
-    {/* Name */}
-    <h3 className="text-3xl font-bold tracking-tight text-[#071b2b] sm:text-4xl">
-      Mr. Aditya Chaudhary
-    </h3>
+            {/* Content */}
+            <div className="lg:order-1">
+
+              {/* Label */}
+              <div className="mb-4 flex items-center gap-3">
+
+                <span className="h-[3px] w-10 rounded-full bg-[#3479ad]" />
+
+                <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#3479ad]">
+                  Board Of Directors
+                </span>
+
+              </div>
 
 
-    {/* Position */}
-    <p className="mt-2 text-base font-semibold text-gray-500 sm:text-lg">
-      Director
-    </p>
+              {/* Name */}
+              <h3 className="text-3xl font-bold tracking-tight text-[#071b2b] sm:text-4xl">
+                Mr. Aditya Chaudhary
+              </h3>
 
 
-    {/* Line */}
-    <div className="mt-5 h-[3px] w-16 rounded-full bg-[#071b2b]" />
+              {/* Position */}
+              <p className="mt-2 text-base font-semibold text-gray-500 sm:text-lg">
+                Director
+              </p>
 
 
-    {/* Bio */}
-    <div className="mt-6 space-y-5 text-[15px] leading-8 text-gray-600 sm:text-base">
+              {/* Line */}
+              <div className="mt-5 h-[3px] w-16 rounded-full bg-[#071b2b]" />
 
-      <p>
-        With a strong academic background and a passion for
-        infrastructure and sustainable development, Mr. Aditya
-        Chaudhary brings valuable expertise to the organization.
-      </p>
 
-      <p>
-        His focus lies in driving innovation, ensuring operational
-        excellence, and contributing to the company’s long-term
-        vision. He believes in building strong teams, fostering
-        collaboration, and creating solutions that make a lasting
-        impact on communities and the environment.
-      </p>
+              {/* Bio */}
+              <div className="mt-6 space-y-5 text-[15px] leading-8 text-gray-600 sm:text-base">
 
-    </div>
+                <p>
+                  With a strong academic background and a passion for
+                  infrastructure and sustainable development, Mr. Aditya
+                  Chaudhary brings valuable expertise to the organization.
+                </p>
 
-  </div>
+                <p>
+                  His focus lies in driving innovation, ensuring operational
+                  excellence, and contributing to the company’s long-term
+                  vision. He believes in building strong teams, fostering
+                  collaboration, and creating solutions that make a lasting
+                  impact on communities and the environment.
+                </p>
 
-</div>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
       </section>
@@ -312,3 +311,4 @@ const Leadership = () => {
 };
 
 export default Leadership;
+

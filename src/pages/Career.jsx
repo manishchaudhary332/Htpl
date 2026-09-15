@@ -56,7 +56,7 @@ const jobs = [
 
 const Career = () => {
   return (
-    <main className="w-full bg-[#f8fafc] text-[#071b2b]">
+    <main className="w-full bg-[#f8fafc] font-sans text-[#071b2b]">
 
       {/* ================= HERO ================= */}
       <section className="relative h-[250px] overflow-hidden sm:h-[290px] lg:h-[330px]">
@@ -85,7 +85,7 @@ const Career = () => {
               <span className="h-px w-8 bg-[#75b843] sm:w-12" />
             </div>
 
-            <h1 className="font-serif text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
               Grow with Us!
             </h1>
 
@@ -109,7 +109,7 @@ const Career = () => {
             Career Opportunities
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-[#071b2b] sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-[#071b2b] sm:text-4xl">
             Find Your Next Opportunity
           </h2>
 
@@ -268,7 +268,7 @@ const Career = () => {
             Be Part Of Our Journey
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
             Ready to Grow With Us?
           </h2>
 
