@@ -1,16 +1,9 @@
 import React from "react";
 import {
     ArrowRight,
-    BookOpen,
-    GraduationCap,
     HeartHandshake,
     HandHeart,
-    Lightbulb,
-    ShieldCheck,
-    Sparkles,
-    Utensils,
     Users,
-    Toilet,
     Droplets,
 } from "lucide-react";
 
@@ -29,6 +22,18 @@ import site5 from "../assets/site5.png";
 import site6 from "../assets/site6.png";
 import site7 from "../assets/site7.png";
 import site8 from "../assets/site8.png";
+
+import csr2 from "../assets/csr2.jpeg";
+import csr1 from "../assets/csr1.png";
+import csr3 from "../assets/csr3.jpeg";
+import csr4 from "../assets/csr4.jpeg";
+import csr5 from "../assets/csr5.jpg";
+import csr6 from "../assets/csr6.jpeg";
+
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+import img4 from "../assets/img4.png";
 
 
 
@@ -68,29 +73,29 @@ const Csr = () => {
         },
     ];
 
-    const gallery = [
-        "/src/assets/csr2.jpeg",
-        "/src/assets/csr1.png",
-        "/src/assets/csr3.jpeg",
-        "/src/assets/csr4.jpeg",
-        "/src/assets/csr5.jpg",
-        "/src/assets/csr6.jpeg",
-    ];
+   const gallery = [
+    csr2,
+    csr1,
+    csr3,
+    csr4,
+    csr5,
+    csr6,
+];
 
     const testimonials = [
-        {
-        image: "/src/assets/img1.png",
-        },
-        {
-        image: "/src/assets/img2.png",
-        },
-        {
-         image: "/src/assets/img3.png",
-        },
-        {
-         image: "/src/assets/img4.png",
-        },
-    ];
+    {
+        image: img1,
+    },
+    {
+        image: img2,
+    },
+    {
+        image: img3,
+    },
+    {
+        image: img4,
+    },
+];
 
     return (
         <main className="min-h-screen bg-white text-gray-900">
@@ -101,13 +106,11 @@ const Csr = () => {
             <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[340px] lg:min-h-[390px]">
 
                 {/* Background Image */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{
-                        backgroundImage:
-                            "url('/src/assets/student.png')",
-                    }}
-                />
+                <img
+        src={student}
+        alt="Nanihal CSR"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+    />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#071d24]/15" />
@@ -343,31 +346,29 @@ const Csr = () => {
 
                     {/* Gallery */}
                     <div className="grid grid-cols-1 gap-3 rounded-2xl bg-gray-100 p-3 shadow-lg sm:grid-cols-2 lg:grid-cols-3">
-  {gallery.map((image, index) => (
-    <div
-      key={index}
-      className={`group relative overflow-hidden rounded-xl bg-gray-200 ${
-        index === 0 ? "sm:col-span-2 lg:col-span-2 lg:row-span-2" : ""
-      }`}
-    >
-      <img
-        src={image}
-        alt={`Nanihal site ${index + 1}`}
-        className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
-          index === 0
-            ? "h-64 sm:h-72 lg:h-[500px]"
-            : "h-56 sm:h-52 lg:h-[242px]"
-        }`}
-      />
+                        {gallery.map((image, index) => (
+                            <div
+                                key={index}
+                                className={`group relative overflow-hidden rounded-xl bg-gray-200 ${index === 0 ? "sm:col-span-2 lg:col-span-2 lg:row-span-2" : ""
+                                    }`}
+                            >
+                                <img
+                                    src={image}
+                                    alt={`Nanihal site ${index + 1}`}
+                                    className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${index === 0
+                                            ? "h-64 sm:h-72 lg:h-[500px]"
+                                            : "h-56 sm:h-52 lg:h-[242px]"
+                                        }`}
+                                />
 
-      <div className="absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/20" />
+                                <div className="absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/20" />
 
-      <span className="absolute bottom-3 left-3 rounded-full bg-black/50 px-3 py-1 text-xs font-semibold text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
-        {String(index + 1).padStart(2, "0")}
-      </span>
-    </div>
-  ))}
-</div>
+                                <span className="absolute bottom-3 left-3 rounded-full bg-black/50 px-3 py-1 text-xs font-semibold text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+                                    {String(index + 1).padStart(2, "0")}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
 
                 </div>
 
@@ -402,26 +403,26 @@ const Csr = () => {
 
 
                     {/* Testimonials */}
-                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-  {testimonials.map((item, index) => (
-    <article
-      key={index}
-      className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-    >
-      {/* Image Frame */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100 sm:aspect-[16/11] lg:aspect-[16/10]">
-        <img
-          src={item.image}
-          alt={item.name}
-          className="h-full w-full object-center transition-transform duration-700 ease-out group-hover:scale-105"
-        />
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                        {testimonials.map((item, index) => (
+                            <article
+                                key={index}
+                                className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                            >
+                                {/* Image Frame */}
+                                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100 sm:aspect-[16/11] lg:aspect-[16/10]">
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="h-full w-full object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                    />
 
-        {/* Subtle Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-70" />
-      </div>
-    </article>
-  ))}
-</div>
+                                    {/* Subtle Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-70" />
+                                </div>
+                            </article>
+                        ))}
+                    </div>
 
                 </div>
 

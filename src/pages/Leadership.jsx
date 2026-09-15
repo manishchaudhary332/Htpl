@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Users,
-  Award,
 } from "lucide-react";
 
 
@@ -18,13 +17,11 @@ const Leadership = () => {
       <section className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[330px] lg:h-[360px]">
 
         {/* Hero Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/src/assets/cta.webp')",
-          }}
-        />
+        <img
+  src={cta}
+  alt="Background"
+  className="absolute inset-0 w-full h-full object-cover object-center"
+/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#071b2b]/10" />
@@ -97,7 +94,7 @@ const Leadership = () => {
 
                 {/* Replace src with your image */}
                 <img
-                  src="/src/assets/jatin.png"
+                  src={jatin}
                   alt="Mr. Jatin Kumar"
                   className="h-[400px] w-full object-cover object-top transition-transform duration-500 hover:scale-[1.03] sm:h-[430px]"
                 />

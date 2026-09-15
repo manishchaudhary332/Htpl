@@ -12,6 +12,7 @@ import project4 from "../assets/Hero2.jpeg";
 import project5 from "../assets/Hero3.webp";
 import project6 from "../assets/Hero4.webp";
 
+
 const projects = [
   {
     image: project1,

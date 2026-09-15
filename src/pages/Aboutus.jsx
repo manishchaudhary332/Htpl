@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 
 // Apni image yahan import karo
-import aboutHero from "../assets/aboutus.webp";
+import aboutus from "../assets/aboutus.webp";
 
 const Aboutus = () => {
   return (
@@ -17,12 +17,11 @@ const Aboutus = () => {
       <section className="relative h-[300px] w-full overflow-hidden sm:h-[350px] lg:h-[390px]">
 
         {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/src/assets/aboutus.webp')",
-          }}
-        />
+        <img
+  src={aboutus}
+  alt="About Us"
+  className="absolute inset-0 w-full h-full object-cover object-center"
+/>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#071b2b]/75" />
